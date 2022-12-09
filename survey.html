@@ -1,7 +1,33 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <link rel="stylesheet" href="css/main.css">
+        <title>Survey</title>
+        <style>
+            body{
+                background-image: url('multimedia/surveybg.jpg');
+                background-size: cover; /*cover*/
+                background-repeat: no-repeat; /*no-repeat, repeat-x, repeat-y, repeat */
+                background-position: center; /*top right, bottom right, center, top left, bottom left*/
+                background-attachment: fixed;
+            }
+            td{
+                font-weight:bold;
+                color:midnightblue;
+            }
+            legend{
+                font-size: x-large;
+                font-weight: bolder;
+                color:black;
+                font-variant: small-caps;
+            }
+            #fs1{
+                background-color:whitesmoke;
+            }
+            footer{
+                color:black
+            }
+        </style>
     </head>
     <body>
         <h1>Please complete the survey!</h1>
@@ -19,8 +45,8 @@
             </fieldset>
         </nav><br>
         <form name="User_Registration" action="abc.html" method="get">
-            <fieldset>
-                <legend><b>Your Information</b></legend>
+            <fieldset id="fs1">
+                <legend>Your Information</legend>
                 <table>
                     <tr>
                         <td><label for="ln">Last Name:</label></td>
@@ -51,8 +77,8 @@
                     </tr>
                 </table>
             </fieldset><br>
-            <fieldset>
-                <legend><b>Survey</b></legend>
+            <fieldset id="fs1">
+                <legend>Survey</legend>
                 <table>
                     <tr>
                         <td>1. Which kinds of information you would like to know?</td>
@@ -100,8 +126,8 @@
                     </tr>
                 </table>
             </fieldset><br>
-            <fieldset>
-                <legend><b>Contact Information</b></legend>
+            <fieldset id="fs1">
+                <legend>Contact Information</legend>
                 <table>
                     <tr>
                         <td><label for="em">Email Address:</label></td>
