@@ -2,12 +2,42 @@
 <html>
     <head>
         <title>Toronto Island Park</title>
+        <link href="main.css" rel="stylesheet">
+
+        <style>
+             h3{
+                padding: 5px;
+                border-width: 2px;
+                border-style: dashed;
+                text-shadow: #b6a691 4px 4px 4px ;
+                background-color: #d9c5ad;
+                border-color: #a8987d;
+            }
+            fieldset{
+                background-color: #e3dbca;
+            }
+            td{
+                background-color: #fcf6e8;
+            }
+
+       
+            #map{margin-left: auto;
+                margin-right: auto;
+                display: block;}
+
+           #trtpark{  margin-left: auto;
+                margin-right: auto;
+                display: block;}
+                
+            #fs1{text-align: center;}
+        
+        </style>
 
     </head>
     <body>
         <h1>Toronto Island Park</h1>
         <nav>
-            <fieldset>
+            <fieldset id="fs1">
                 
                     <a href="home.html">Back to Home</a> &nbsp;&nbsp;
                     <a href="park.html">High Park</a>&nbsp;
@@ -26,7 +56,7 @@
         <h3>About Toronto Island Park </h3>
         <p>Toronto Island Park s made up of 15 individual islands of all shapes and sizes. Just a short ferry ride from the city of Toronto, 
             and all connected by boardwalks and walking trails,<br> the Toronto Islands are the perfect place to spend a day with the family, someone special, or on your own.</p>
-        <img src="multimedia/trt_island_park.jpg" height="300" width="500"><br>
+        <img id="trtpark" src="multimedia/trt_island_park.jpg" height="300" width="500"><br>
 
         <fieldset>
             <legend><h3>Activites to do in the park:</h3></legend>
@@ -132,7 +162,7 @@
         <br>
         <fieldset>
             <legend><h3>Toronto Island Park Map</h3></legend>
-            <img src="multimedia/torontoislandmap.jpg" height="500" width="700">
+            <img id="map" src="multimedia/torontoislandmap.jpg" height="500" width="700">
 
         </fieldset>
         <br>
