@@ -3,7 +3,60 @@
 <head>
 <title>Attractions in Toronto</title>
 <link rel="icon" href = "multimedia/icon.jpg">
+<link rel="stylesheet" href="main.css"> 
 
+<style>
+    a:link  {
+        color: rgb(90, 150, 207);
+            }
+    a:focus {
+        background-color: rgb(199, 134, 237);
+            }
+    a:active{
+        background-color: rgb(168, 35, 92);
+            }
+        
+    #d1     {
+        width: 650px;
+        padding: 20px;
+        border: 10px solid rgba(125, 207, 188, 0.74);
+        margin: 10;
+            }
+
+    #d2 {
+        width: 777px;
+        padding: 15px;
+        border: 4px solid rgb(140, 163, 222);
+        margin: 1;
+  }
+    #d3 {
+        width: 500px;
+        padding: 15px;
+        border: 4px solid rgb(193, 222, 50);
+        margin: 1;
+        }
+  
+    h2{
+        font-size: 30px;
+        text-shadow: 2px -2px 2px rgba(132, 219, 119, 0.949);
+        }
+
+    td{
+        font-size:90%;
+        font-family:sans-serif, monospace, Courier;
+        font-style:italic;  
+        font-weight:bolder;
+        color:rgb(109, 17, 40);
+        background-color: #d9c5ad;
+        }
+    #fs2{
+        background-image: url(multimedia/bk2.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+
+    }
+
+</style>
 </head>
 <body>
     <header>
@@ -27,8 +80,9 @@
         
     <hr>
     <h2><abbr title="Address: 290 Bremner Blvd, Toronto, ON M5V 3L9">CN Tower</abbr></h2> <br> 
-    <ul style="list-style-type:circle"> 
-     <img src="multimedia/cntower.gif">
+    
+    <div id="d1"><img src="multimedia/cntower.gif"></div>
+     <ul style="list-style-type:circle"> 
     <li><h3>About it</h3></li>
         
         <pre> 
@@ -45,8 +99,8 @@
             
             </pre>
 
-            <li><h3>Best view in Toronto </h3></li>
-            <img src="multimedia/cn.gif"> <br>
+            <div id="d2"><li><h3>Best view in Toronto </h3></li>
+                <div id="d3"><img src="multimedia/cn.gif"> <br></div>
 
             <p>The highest viewing area on the CN Tower is from the Sky Pod at 447 meters above the city, with views that, on clear days, extend 
             
@@ -66,7 +120,7 @@
             
             featuring fine dining and some of the best views from a table anywhere in Toronto. 360 is open for lunch and dinner, and visitors who dine <br>
             
-            here also receive complimentary access to the LookOut and Glass Floor levels of the tower.</p> <br>
+            here also receive complimentary access to the LookOut and Glass Floor levels of the tower.</p> <br> </div>
         
             
             <fieldset>
@@ -81,9 +135,9 @@
             </fieldset>
             
 
-    <fieldset>
+    <fieldset id="fs2">
             
-        <legend><h3>Details</h3></legend>
+        <legend><h3 style="color:rgb(249, 249, 249); text-shadow: 2px 2px 2px rgba(17, 17, 13, 0.949);font-size:180%;">Details</h3></legend>
 
             <table border="3">
                 <tr>
@@ -112,7 +166,7 @@
             </tr>
             </table>           
             <br>
-            <table border="2">
+            <table id="tb2" border="2">
             
                 <tr>
                     <th>Price</th>
@@ -153,8 +207,8 @@
 
         
     <h4>
-            Winter sales!<br>
-   
+            <h4 style="background-color:#a8dee75a">Winter sales!</h4><br>
+
    </h4>
 
    <br>
