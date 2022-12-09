@@ -2,12 +2,41 @@
 <html>
     <head>
         <title>High Park</title>
+        <link href="main.css" rel="stylesheet">
+        <style>
+            h3{
+                padding: 5px;
+                border-width: 2px;
+                border-style: dashed;
+                text-shadow: #b6a691 4px 4px 4px ;
+                background-color: #d9c5ad;
+                border-color: #a8987d;
+            }
+            fieldset{
+                background-color: #e3dbca;
+            }
+            td{
+                background-color: #fcf6e8;
+            }
+
+            #highpark{
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+            }
+
+            #map{  margin-left: auto;
+                margin-right: auto;
+                display: block;}
+
+            #fs1{text-align: center;}
+        </style>
 
     </head>
     <body>
         <h1>High Park</h1>
         <nav>
-            <fieldset>
+            <fieldset id="fs1">
                 
                     <a href="home.html">Back to Home</a> &nbsp;
                     <a href="park2.html">Toronto Island Park</a>&nbsp;
@@ -28,7 +57,7 @@
             easy public transit access, a dog park, a zoo, playgrounds for children, greenhouses, picnic areas, and various events throughout the year.</p>
         <p>High Park is recognized as one of the most significant natural sites within the City of Toronto because it is home to countless 
             species of wildlife, including insects, birds, amphibians and reptiles, fish and mammals</p>
-        <img src="multimedia/highpark.jfif" height="300" width="500">
+        <img id="highpark" src="multimedia/highpark.jfif" height="300" width="500">
         <br>
         
         <fieldset>
@@ -137,7 +166,7 @@
         
         <fieldset>
             <legend><h3>The map of High Park</h3></legend>
-            <img src="multimedia/highparkmap.jpg"height="700" width="500"><br>
+            <img id="map"src="multimedia/highparkmap.jpg"height="700" width="500"><br>
 
         </fieldset>
         
