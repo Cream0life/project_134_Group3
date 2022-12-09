@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Please complete the survey!</h1>
+        <nav>
+            <fieldset>
+                <a href="Home.html">Back to Home</a>&nbsp;
+                <a href="park1.html">High Park</a>&nbsp;
+                <a href="park2.html">Toronto Island Park</a>&nbsp;
+                <a href="cntower.html">CN Tower</a>&nbsp;
+                <a href="rom.html">Royal Ontario Museum</a>&nbsp;
+                <a href="StLawrence.html">St. Lawrence Market</a>&nbsp;
+                <a href="EatonCentre.html">Eaton Centre&nbsp;
+                <a href="page1.html">Fine Dine</a>&nbsp;
+                <a href="page2.html">Wine</a>&nbsp;
+            </fieldset>
+        </nav><br>
+        <form name="User_Registration" action="abc.html" method="get">
+            <fieldset>
+                <legend><b>Your Information</b></legend>
+                <table>
+                    <tr>
+                        <td><label for="ln">Last Name:</label></td>
+                        <td><input type="text" id="ln" name="lname" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="fn">First Name:</label></td>
+                        <td><input type="text" id="fn" name="fname"></td>
+                    </tr>
+                    <tr>
+                        <td>Gender:</td>
+                        <td>
+                            <input type="radio" name="gen" value="MA" id="ma">
+                            <label for="ma">Males</label><br>
+                            <input type="radio" name="gen" value="FM" id="fm">
+                            <label for="fm">Females</label><br>
+                            <input type="radio" name="gen" value="OT" id="ot">
+                            <label for="ot">Others</label><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="age">Age:</label></td>
+                        <td><input type="number" id="age" name="age" min="15" max="100"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="nat">Nationality:</label></td>
+                        <td><input type="text" id="nat" name="nationality"></td>
+                    </tr>
+                </table>
+            </fieldset><br>
+            <fieldset>
+                <legend><b>Survey</b></legend>
+                <table>
+                    <tr>
+                        <td>1. Which kinds of information you would like to know?</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="info1" value="comm" id="comm"><label for="comm">Other's comment</label>&nbsp;&nbsp;
+                            <input type="checkbox" name="info2" value="toi" id="toi"><label for="toi">Location of toilet</label>&nbsp;&nbsp;
+                            <input type="checkbox" name="info3" value="photo" id="photo"><label for="photo">Location for beautiful photos</label>&nbsp;&nbsp;
+                            <input type="checkbox" name="info4" value="fac" id="fac"><label for="fac">facilities for babies/disabled</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2. What is your favourite activities when you are travelling?</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="activity1" value="eat" id="eat"><label for="eat">Eating</label>&nbsp;&nbsp;
+                            <input type="checkbox" name="activity2" value="buy" id="buy"><label for="buy">Shopping</label>&nbsp;&nbsp;
+                            <input type="checkbox" name="activity3" value="exh" id="exh"><label for="exh">Exhibition</label>&nbsp;&nbsp;
+                            <input type="checkbox" name="activity4" value="park" id="park"><label for="park">Natural Park</label>&nbsp;&nbsp;
+                            <input type="checkbox" name="activity5" value="outdoor" id="outdoor"><label for="outdoor">Playing sport</label>&nbsp;&nbsp;
+                            <input type="checkbox" name="activity6" value="theme" id="theme"><label for="theme">Theme Park</label>&nbsp;&nbsp;
+                            <input type="checkbox" name="activity7" value="others" id="others"><label for="others">Others</label>&nbsp;&nbsp;
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>3. Comments: </td>
+                        <td>
+                            <textarea name="comments" placeholder="Please enter your comments!" cols="50" rows="8"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4. How do you know this web:</td>
+                        <td>
+                            <select name="way">
+                                    <option value="web">Web search</option>
+                                    <option value="fb">Facebook</option>
+                                    <option value="ig">Instagram</option>
+                                    <option value="twi">Twitter</option>
+                                    <option value="fd">Introduce by friends</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset><br>
+            <fieldset>
+                <legend><b>Contact Information</b></legend>
+                <table>
+                    <tr>
+                        <td><label for="em">Email Address:</label></td>
+                        <td><input type="email" id="em" name="em" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="ph">Phone:</label></td>
+                        <td><input type="tel" id="ph" name="ph"></td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <br><br>
+            <input type="submit" name="btnSubmit">
+            <input type="reset" name="btnReset" value="Reset">
+        </form><br><br>
+    </body>
+    <footer>
+        Follow us on Instagram:  <a href="https://www.instagram.com">
+        <img src="multimedia/ig.png" width="20" alt="Ig page here"></a>
+        <br> 
+        Contact us: <a href = "mailto: group3@example.com">group3@example.com</a> 
+        or <a href="tel:123-456-7890">123-456-7890</a> 
+        <br>
+        © 2022 Humber Web Design Group 3. All rights reserved.
+    </footer>
+</html>
