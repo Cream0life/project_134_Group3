@@ -2,8 +2,13 @@
 <html>
 <head>
 <title>Attractions in Toronto</title>
+
 <link rel="icon" href = "multimedia/icon.jpg">
 <link rel="stylesheet" href="main.css"> 
+
+<script src="js/validationrom.js">
+</script>
+
 <style>
     a:link{
         color: rgb(90, 150, 207);
@@ -20,7 +25,19 @@
         border: 3px solid rebeccapurple;
         margin: 10;
         }
-
+    form{
+        width: 800px;
+        padding: 20px;
+        border: 3px solid rgb(175, 169, 103);
+        margin: 10;
+        }
+    
+    #fp{
+        font-size:150%;
+        font-family:sans-serif;
+        font-weight:bolder;
+        color:rgb(175, 169, 103);
+        }
     h2{
         font-size: 30px;
         text-shadow: 3px 3px 5px rgba(119, 112, 33, 0.949);
@@ -41,9 +58,9 @@
         background-repeat: no-repeat;
 
     }
-
 </style>
 </head>
+
 <body>
     <header>
     <h1>Attractions in Toronto</h1>
@@ -197,7 +214,22 @@
 
             </table>
         </fieldset>
-
+        <hr>
+        <form id="f1" method="get">
+            <p id="fp">Don't want to calculate the price by yourself?<br>
+                We got you!<br>
+                You can try to enter the info and see the ticket price: </p>
+            Age :<input type="number" id="t1" min="0" max="130">
+            <span id="t1result"></span>
+            <br><br>Are you a stduent : <input type="radio" name="student" id="t2" value="yes">YES
+            <input type="radio" name="student" id="t2" value="no">NO
+            <span id="t2result"></span>
+            <br><br>Ticket Type : <input type="radio" name="ttype" id="t3" value="ga">General Admission 
+            <input type="radio" name="ttype" id="t3" value="fb"> General Admission + Fantastic Beasts™: The Wonder of Nature	
+            <span id="t3result"></span>
+            <br><br><input type ="button" id="btn1" value ="Calculate it!" onclick="validationrom()">
+            
+        </form>
 
   
         
