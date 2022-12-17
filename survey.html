@@ -3,12 +3,14 @@
     <head>
         <link rel="stylesheet" href="css/main.css">
         <title>Survey</title>
+        <script src="js/validationrom.js">
+        </script>
         <style>
             body{
                 background-image: url('multimedia/surveybg.jpg');
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-position: center;
+                background-size: cover; /*cover*/
+                background-repeat: no-repeat; /*no-repeat, repeat-x, repeat-y, repeat */
+                background-position: center; /*top right, bottom right, center, top left, bottom left*/
                 background-attachment: fixed;
             }
             td{
@@ -44,17 +46,19 @@
                 <a href="page2.html">Wine</a>&nbsp;
             </fieldset>
         </nav><br>
-        <form name="User_Registration" action="abc.html" method="get">
+        <form name="User_Registration" method="get">
             <fieldset id="fs1">
                 <legend>Your Information</legend>
                 <table>
                     <tr>
                         <td><label for="ln">Last Name:</label></td>
-                        <td><input type="text" id="ln" name="lname" required></td>
+                        <td><input type="text" id="ln" name="lname"></td>
+                        <td><span id="t1result"></span></td>
                     </tr>
                     <tr>
                         <td><label for="fn">First Name:</label></td>
                         <td><input type="text" id="fn" name="fname"></td>
+                        <td><span id="t2result"></span></td>
                     </tr>
                     <tr>
                         <td>Gender:</td>
@@ -66,19 +70,23 @@
                             <input type="radio" name="gen" value="OT" id="ot">
                             <label for="ot">Others</label><br>
                         </td>
+                        <td><span id="t3result"></span></td>
                     </tr>
                     <tr>
                         <td><label for="age">Age:</label></td>
                         <td><input type="number" id="age" name="age" min="15" max="100"></td>
+                        <td><span id="t4result"></span></td>
                     </tr>
                     <tr>
                         <td><label for="nat">Nationality:</label></td>
                         <td><input type="text" id="nat" name="nationality"></td>
+                        <td><span id="t5result"></span></td>
+
                     </tr>
                 </table>
             </fieldset><br>
             <fieldset id="fs1">
-                <legend>Survey</legend>
+                <legend>Survey (Optional)</legend>
                 <table>
                     <tr>
                         <td>1. Which kinds of information you would like to know?</td>
@@ -131,17 +139,19 @@
                 <table>
                     <tr>
                         <td><label for="em">Email Address:</label></td>
-                        <td><input type="email" id="em" name="em" required></td>
+                        <td><input type="email" id="em" name="em"></td>
+                        <td><span id="t6result"></span></td>
                     </tr>
                     <tr>
                         <td><label for="ph">Phone:</label></td>
                         <td><input type="tel" id="ph" name="ph"></td>
+                        <td><span id="t7result"></span></td>
                     </tr>
                 </table>
             </fieldset>
 
             <br><br>
-            <input type="submit" name="btnSubmit">
+            <input type="button" name="btnSubmit" value="Submit" onclick="validationsurvey()">
             <input type="reset" name="btnReset" value="Reset">
         </form><br><br>
     </body>
