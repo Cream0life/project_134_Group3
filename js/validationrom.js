@@ -66,7 +66,6 @@ function validationsurvey(){
     var nat = document.getElementById("nat").value;
     var email = document.getElementById("em").value;
     var phone = document.getElementById("ph").value;
-    var way = document.querySelector('select[name="way"]');
     var checkvalue=true
     
 
@@ -93,6 +92,10 @@ function validationsurvey(){
 
     if(age==""){
         document.getElementById("t4result").innerHTML="(Age is blank)";
+        checkvalue=false;
+    }
+    else if(age<15 || age>100){
+        document.getElementById("t4result").innerHTML="(Age must between 15-100)";
         checkvalue=false;
     }
     else
