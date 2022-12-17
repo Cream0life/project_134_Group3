@@ -13,6 +13,13 @@
                 background-color: #d9c5ad;
                 border-color: #a8987d;
             }
+
+            h4{padding: 5px;
+                border-width: 2px;
+                border-style: dashed;
+                margin-right: 820px;
+                background-color: #d9c5ad;
+                border-color: #a8987d;}
             fieldset{
                 background-color: #e3dbca;
             }
@@ -30,8 +37,18 @@
                 display: block;}
                 
             #fs1{text-align: center;}
+            #form{ padding: 5px 5px 5px 20px;
+                border-width: 4px;
+                border-style: solid;
+                border-color: #b6a691;
+                margin-right: 50px;}
+
+            span{
+                color:red;
+            }
         
         </style>
+        <script src="js/park2validation.js"></script>
 
     </head>
     <body>
@@ -45,8 +62,8 @@
                     <a href="rom.html">Royal Ontario Museum</a>&nbsp;
                     <a href="StLawrence.html">St. Lawrence Market</a>&nbsp;
                     <a href="EatonCentre.html">Eaton Centre</a>&nbsp;
-                    <a href="page1.html">Fine Dine</a>&nbsp;
-                    <a href="page2.html">Wine</a>&nbsp;
+                    <a href="page1.html">Fine Dine </a>&nbsp;
+                    <a href="page2.html">Wine </a>&nbsp;
                     <a href="survey.html">Survey</a>
     
                 
@@ -59,7 +76,7 @@
         <img id="trtpark" src="multimedia/trt_island_park.jpg" height="300" width="500"><br>
 
         <fieldset>
-            <legend><h3>Activites to do in the park:</h3></legend>
+            <legend><h3>Activites to do in the park</h3></legend>
             <ol>
                 <li><strong>Riding bikes</strong></li><br>
                 <img src="multimedia/bike.jpg" width="300" height="200">
@@ -99,7 +116,7 @@
         <fieldset>
 
         
-            <legend><h3>Attraction in Toronto Island Park:</h3></legend>
+            <legend><h3>Attraction in Toronto Island Park</h3></legend>
                 <ol>
                     <li><strong>Centreville Amusement Park</strong></li><br>
                     <img src="multimedia/amusementpark.jpg" width="300" height="200">
@@ -134,6 +151,26 @@
                     </table>
                     
                     <br>
+                    <div id="form">
+                        <form id="f1" method="get" action="secondpage.html">
+                            <h4 >Ticket Price Calculator</h4>
+                            Number of Season Pass:<input type="text" id="t1" maxlength="4" size="4">
+                            <span id="t1result"></span>
+                            <br><br>Number of Children Under 4 years old:<input type="text" id="t2" maxlength="4" size="4">
+                            <span id="t2result"></span>
+                            <br><br>Number of people over 4 years old:<input type="text" id="t3" maxlength="4" size="4">
+                            <span id="t3result"></span>
+                            <br><br>Number of family pass:<input type="text" id="t4" maxlength="4" size="4">
+                            <span id="t4result"></span>
+                            <br><br><input type ="button" id="btn1" value ="Calculate" onclick="valiAndCal()">
+                            <br><br><label>The total is: </label>
+                            <p id="total">  </p>
+            
+                        
+            
+                        </form>
+                    </div>
+                    <br><br>
                     <li><strong>William Meany Maze</strong> </li><br>
                     <img src="multimedia/maze.jpg" width="300" height="200">
                     <ul>

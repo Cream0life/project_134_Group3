@@ -30,7 +30,25 @@
                 display: block;}
 
             #fs1{text-align: center;}
+
+            #form{ padding: 5px 5px 5px 20px;
+                border-width: 4px;
+                border-style: solid;
+                border-color: #b6a691;
+                margin-right: 50px;}
+
+            h4{padding: 5px;
+                border-width: 2px;
+                border-style: dashed;
+                margin-right: 820px;
+                background-color: #d9c5ad;
+                border-color: #a8987d;}
+
+            span{
+                color:red;
+            }
         </style>
+        <script src="js/parkvalidation.js"></script>
 
     </head>
     <body>
@@ -145,6 +163,22 @@
                     <td>$3.5</td>
             </table>
             <br>
+            <div id="form">
+            <form id="f1" method="get" action="secondpage.html">
+                <h4>Ticket Price Calculator</h4>
+                Number of Adults:<input type="text" id="t1" maxlength="4" size="4">
+                <span id="t1result"></span>
+                <br><br>Number of Children or Seniors:<input type="text" id="t2" maxlength="4" size="4">
+                <span id="t2result"></span>
+                <br><br><input type ="button" id="btn1" value ="Calculate" onclick="valiAndCal()">
+                <br><br><label>The total is: </label>
+                <p id="total">  </p>
+
+            
+
+            </form>
+            </div>
+            <br><br>
             <li><Strong>Colborne Lodge</Strong></li><br>
             <img src="multimedia/colbornelodge.jpg" width="300" height="200">
             <ul>
